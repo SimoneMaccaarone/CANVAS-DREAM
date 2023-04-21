@@ -1,0 +1,26 @@
+per creare l' effetto star wars 
+bisogna creare 4 canvas attaccate e con il codice piu o meno cosi
+
+for (let i = 0; i < 100; i++) {
+
+    const point = {
+        x: Math.random() * 600,
+        y: Math.random() * 600
+    }
+    
+   point.color =  colorRandomRGB(); // colore del pennarello
+
+   // cordinate random che si somma a "const point"
+//  ----- Cordinate random ----
+    setInterval(() => {
+        const randomX = (Math.random()*4)-1;
+        const randomY = (Math.random()*4)-1;
+
+        ctx.fillStyle= point.color
+        ctx.fillRect(point.x, point.y,2,2)
+
+        point.x+= randomX
+        point.y+= randomY
+
+    }, 1);
+}
