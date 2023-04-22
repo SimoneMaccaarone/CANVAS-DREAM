@@ -22,8 +22,8 @@ class Point {
         const randomY = 300;
 
         // //           Speed X & Y
-        const speedX = (Math.random() * 2) - 1
-        const speedY = (Math.random() * 2) - 1
+        const speedX = (Math.random() * 2) - 1;
+        const speedY = (Math.random() * 2) - 1;
 
         //               Color
         const red = Math.floor(Math.random() * 256);

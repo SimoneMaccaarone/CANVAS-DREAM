@@ -1,8 +1,11 @@
 const myCanvas = document.getElementById('my-canvas');
 const ctx = myCanvas.getContext('2d');
 
+
+
 let newGeneration = Generation.generateRandom(100, myCanvas.width, myCanvas.height);
 console.log(newGeneration);
+
 
 
 function step() {
@@ -15,7 +18,14 @@ function step() {
         newGeneration = Generation.generateRandom(100, myCanvas.width, myCanvas.height);
     }
     window.requestAnimationFrame(step);
+
+    ctx.fillStyle = ' black'
+    ctx.beginPath();
+    ctx.arc(300, 300, 30, 0, 2 * Math.PI);
+    ctx.fill();
+
 }
+
 
 window.requestAnimationFrame(step);
 
@@ -24,7 +34,11 @@ function getRandomColorRGBA() {
     const green = Math.floor(Math.random() * 256);
     const blue = Math.floor(Math.random() * 256);
     const alpha = Math.random();
-    
+
     return ctx.fillStyle = `rgba(${red},${green},${blue},${alpha})`;
-}  
+}
+
+ctx.fillStyle = 'black'
+ctx.fillRect(285, 285, 50, 50);
+
 
