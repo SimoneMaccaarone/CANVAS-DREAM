@@ -10,10 +10,14 @@ console.log(newGeneration);
 
 function step() {
 
+
     newGeneration.draw(ctx);
+    ctx.fillStyle = 'rgba(0,0,0,0.05)'
+    ctx.fillRect(0, 0, myCanvas.width, myCanvas.height)
+
 
     if (newGeneration.isDead()) {
-        ctx.fillStyle = 'rgba(0,0,0,0.5)'
+        ctx.fillStyle = 'rgba(0,0,0,0.1)'
         ctx.fillRect(0, 0, myCanvas.width, myCanvas.height)
         newGeneration = Generation.generateRandom(100, myCanvas.width, myCanvas.height);
     }
@@ -37,8 +41,5 @@ function getRandomColorRGBA() {
 
     return ctx.fillStyle = `rgba(${red},${green},${blue},${alpha})`;
 }
-
-ctx.fillStyle = 'black'
-ctx.fillRect(285, 285, 50, 50);
 
 
