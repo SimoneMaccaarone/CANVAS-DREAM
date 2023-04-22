@@ -27,3 +27,4 @@ function getRandomColorRGBA() {
     
     return ctx.fillStyle = `rgba(${red},${green},${blue},${alpha})`;
 }  
+
