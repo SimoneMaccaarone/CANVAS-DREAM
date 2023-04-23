@@ -1,6 +1,6 @@
 class Generation {
 
-    constructor(pointsArray = [], lifetime = 300) {
+    constructor(pointsArray = [], lifetime = 400) {
         this.pointsArray = pointsArray;
         this.lifetime = lifetime;
     }

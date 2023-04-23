@@ -13,7 +13,7 @@ class Point {
 
     draw(ctx) {
         ctx.fillStyle = (this.color);
-        ctx.fillRect(this.x, this.y, 2, 2);
+        ctx.fillRect(this.x, this.y, 10, 10);
     }
 
     static generateRandom(canvasWidth, canvasHeight) {
