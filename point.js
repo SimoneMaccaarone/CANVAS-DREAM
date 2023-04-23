@@ -13,13 +13,13 @@ class Point {
 
     draw(ctx) {
         ctx.fillStyle = (this.color);
-        ctx.fillRect(this.x, this.y, 10, 10);
+        ctx.fillRect(this.x, this.y, 20, 20);
     }
 
     static generateRandom(canvasWidth, canvasHeight) {
         //               X & Y
-        const randomX = 0;
-        const randomY = 600;
+        const randomX = 450;
+        const randomY = 450;
 
         // //           Speed X & Y
         const speedX = (Math.random() * 2) - 1;
