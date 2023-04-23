@@ -18,8 +18,8 @@ class Point {
 
     static generateRandom(canvasWidth, canvasHeight) {
         //               X & Y
-        const randomX = 300;
-        const randomY = 300;
+        const randomX = 0;
+        const randomY = 600;
 
         // //           Speed X & Y
         const speedX = (Math.random() * 2) - 1;

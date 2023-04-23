@@ -6,10 +6,16 @@ const ctx = myCanvas.getContext('2d');
 let newGeneration = Generation.generateRandom(500, myCanvas.width, myCanvas.height);
 console.log(newGeneration);
 
+let newGeneration2 =  Generation.generateRandom(500, myCanvas.width, myCanvas.height);
+console.log(newGeneration2);
 
 
 function step() {
     newGeneration.draw(ctx);
+    ctx.fillStyle = 'rgba(0,0,0,0.03)'
+    ctx.fillRect(0, 0, myCanvas.width, myCanvas.height)
+
+    newGeneration2.draw(ctx);
     ctx.fillStyle = 'rgba(0,0,0,0.03)'
     ctx.fillRect(0, 0, myCanvas.width, myCanvas.height)
 
