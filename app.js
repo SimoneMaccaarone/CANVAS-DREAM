@@ -12,7 +12,7 @@ console.log(newGeneration);
 
 function step() {
     newGeneration.draw(ctx);
-    ctx.fillStyle = 'rgba(0,0,0,0.03)'
+    ctx.fillStyle = 'rgba(0,0,0,0.02)'
     ctx.fillRect(0, 0, myCanvas.width, myCanvas.height)
 
     // newGeneration2.draw(ctx);
