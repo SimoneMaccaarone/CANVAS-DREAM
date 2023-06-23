@@ -1,11 +1,17 @@
+html,
+* {
+    margin: 0%;
+    padding: 0%;
+}
 
-
-body
-{
+body {
+    margin: 0%;
+    padding: 0%;
     border-color: white;
     display: flex;
     justify-content: center;
-    margin: 19px;
+    height: 100vh;
+    /* margin: 19px; */
     /* background-color: black; */
     /* width: 100vw;
     height: 100vh; */
@@ -13,7 +19,7 @@ body
 
 
 
-.my-canvas{
+.my-canvas {
     background-color: black;
 }
 
